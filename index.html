@@ -70,6 +70,8 @@
         .btn-primary:hover { background: #1fb55f; }
         .btn-secondary { background: transparent; color: #58a6ff; border-color: #58a6ff; }
         .btn-secondary:hover { background: rgba(88, 166, 255, 0.1); }
+        .btn-linkedin { background: transparent; color: #0a66c2; border-color: #0a66c2; }
+        .btn-linkedin:hover { background: rgba(10, 102, 194, 0.1); }
         .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
         section { margin: 5rem 0; padding: 3rem 0; border-bottom: 1px solid #30363d; }
         section:last-child { border-bottom: none; }
@@ -149,8 +151,9 @@
         }
         .footer-content { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
         .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
-        .social-links a { font-size: 0.9rem; color: #8b949e; }
+        .social-links a { font-size: 0.9rem; color: #8b949e; display: inline-flex; align-items: center; gap: 0.4rem; }
         .social-links a:hover { color: #58a6ff; }
+        .social-links a.linkedin:hover { color: #0a66c2; }
         .footer-text { font-size: 0.85rem; color: #8b949e; }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
@@ -185,6 +188,7 @@
         </p>
         <div class="cta-links">
             <a href="https://github.com/loki-0x01" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/lokeshthodeti24" class="btn btn-linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="#projects" class="btn btn-secondary">View Projects</a>
         </div>
     </div>
@@ -281,6 +285,7 @@
         <div class="footer-content">
             <div class="social-links">
                 <a href="https://github.com/loki-0x01"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/lokeshthodeti24" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/loki-0x01/iac-dojo">IaC Dojo</a>
                 <a href="https://github.com/loki-0x01/openshift-dojo">OpenShift Dojo</a>
             </div>
