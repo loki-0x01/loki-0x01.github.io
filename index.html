@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loki — Infrastructure Engineer | Cloud & Platform Engineering</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
             background: #0d1117;
@@ -22,18 +14,8 @@
             line-height: 1.6;
             min-height: 100vh;
         }
-
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: #79c0ff;
-        }
-
-        /* Header/Nav */
+        a { color: #58a6ff; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #79c0ff; }
         header {
             position: sticky;
             top: 0;
@@ -43,7 +25,6 @@
             padding: 1rem 0;
             z-index: 100;
         }
-
         .header-content {
             max-width: 900px;
             margin: 0 auto;
@@ -52,50 +33,18 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #f0f6fc;
-        }
-
-        .nav {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav a {
-            font-size: 0.9rem;
-            color: #8b949e;
-            transition: color 0.2s;
-        }
-
-        .nav a:hover {
-            color: #58a6ff;
-        }
-
-        /* Hero Section */
+        .logo { font-size: 1.5rem; font-weight: 700; color: #f0f6fc; }
+        .nav { display: flex; gap: 2rem; list-style: none; }
+        .nav a { font-size: 0.9rem; color: #8b949e; transition: color 0.2s; }
+        .nav a:hover { color: #58a6ff; }
         .hero {
             max-width: 900px;
             margin: 4rem auto;
             padding: 0 1rem;
             text-align: center;
         }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: #f0f6fc;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .hero .tagline {
-            font-size: 1.2rem;
-            color: #8b949e;
-            margin-bottom: 1rem;
-        }
-
+        .hero h1 { font-size: 3rem; color: #f0f6fc; margin-bottom: 0.5rem; font-weight: 700; }
+        .hero .tagline { font-size: 1.2rem; color: #8b949e; margin-bottom: 1rem; }
         .hero-desc {
             font-size: 1rem;
             color: #c9d1d9;
@@ -103,14 +52,7 @@
             margin: 0 auto 2rem;
             line-height: 1.8;
         }
-
-        .cta-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
+        .cta-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
         .btn {
             display: inline-flex;
             align-items: center;
@@ -123,45 +65,13 @@
             transition: all 0.2s;
             border: 1px solid #30363d;
         }
-
-        .btn-primary {
-            background: #26d46f;
-            color: #0d1117;
-            border-color: #26d46f;
-        }
-
-        .btn-primary:hover {
-            background: #1fb55f;
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #58a6ff;
-            border-color: #58a6ff;
-        }
-
-        .btn-secondary:hover {
-            background: rgba(88, 166, 255, 0.1);
-        }
-
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        /* Sections */
-        section {
-            margin: 5rem 0;
-            padding: 3rem 0;
-            border-bottom: 1px solid #30363d;
-        }
-
-        section:last-child {
-            border-bottom: none;
-        }
-
+        .btn-primary { background: #26d46f; color: #0d1117; border-color: #26d46f; }
+        .btn-primary:hover { background: #1fb55f; }
+        .btn-secondary { background: transparent; color: #58a6ff; border-color: #58a6ff; }
+        .btn-secondary:hover { background: rgba(88, 166, 255, 0.1); }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+        section { margin: 5rem 0; padding: 3rem 0; border-bottom: 1px solid #30363d; }
+        section:last-child { border-bottom: none; }
         .section-title {
             font-size: 2rem;
             color: #f0f6fc;
@@ -171,58 +81,17 @@
             align-items: center;
             gap: 0.8rem;
         }
-
-        /* About */
-        .about-text {
-            font-size: 1rem;
-            color: #c9d1d9;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+        .about-text { font-size: 1rem; color: #c9d1d9; line-height: 1.8; margin-bottom: 1.5rem; }
+        .tech-group { margin-bottom: 2rem; }
+        .tech-label {
+            font-size: 0.8rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
         }
-
-        .highlight-box {
-            background: rgba(48, 54, 61, 0.3);
-            border-left: 3px solid #26d46f;
-            padding: 1rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-card {
-            background: rgba(22, 27, 34, 0.8);
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        .skill-card:hover {
-            border-color: #58a6ff;
-            background: rgba(22, 27, 34, 1);
-        }
-
-        .skill-card h3 {
-            font-size: 1.1rem;
-            color: #58a6ff;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
+        .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .badge {
             display: inline-block;
             padding: 0.3rem 0.7rem;
@@ -233,44 +102,16 @@
             font-size: 0.8rem;
             font-weight: 500;
         }
-
-        .badge.cyan {
-            background: rgba(79, 195, 247, 0.15);
-            border-color: rgba(79, 195, 247, 0.3);
-            color: #4fc3f7;
-        }
-
-        .badge.red {
-            background: rgba(248, 113, 113, 0.15);
-            border-color: rgba(248, 113, 113, 0.3);
-            color: #f87171;
-        }
-
-        .badge.purple {
-            background: rgba(186, 85, 211, 0.15);
-            border-color: rgba(186, 85, 211, 0.3);
-            color: #ba55d3;
-        }
-
-        .badge.yellow {
-            background: rgba(234, 179, 8, 0.15);
-            border-color: rgba(234, 179, 8, 0.3);
-            color: #eab308;
-        }
-
-        .badge.orange {
-            background: rgba(251, 146, 60, 0.15);
-            border-color: rgba(251, 146, 60, 0.3);
-            color: #fb923c;
-        }
-
-        /* Projects */
+        .badge.cyan { background: rgba(79, 195, 247, 0.15); border-color: rgba(79, 195, 247, 0.3); color: #4fc3f7; }
+        .badge.red { background: rgba(248, 113, 113, 0.15); border-color: rgba(248, 113, 113, 0.3); color: #f87171; }
+        .badge.purple { background: rgba(186, 85, 211, 0.15); border-color: rgba(186, 85, 211, 0.3); color: #ba55d3; }
+        .badge.yellow { background: rgba(234, 179, 8, 0.15); border-color: rgba(234, 179, 8, 0.3); color: #eab308; }
+        .badge.orange { background: rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.3); color: #fb923c; }
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-
         .project-card {
             background: rgba(22, 27, 34, 0.8);
             border: 1px solid #30363d;
@@ -280,42 +121,21 @@
             display: flex;
             flex-direction: column;
         }
-
         .project-card:hover {
             border-color: #58a6ff;
             background: rgba(22, 27, 34, 1);
             transform: translateY(-4px);
         }
-
-        .project-title {
-            font-size: 1.1rem;
-            color: #f0f6fc;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .project-desc {
-            font-size: 0.9rem;
-            color: #8b949e;
-            margin-bottom: 1rem;
-            flex-grow: 1;
-        }
-
+        .project-title { font-size: 1.1rem; color: #f0f6fc; margin-bottom: 0.5rem; font-weight: 600; }
+        .project-desc { font-size: 0.9rem; color: #8b949e; margin-bottom: 1rem; flex-grow: 1; }
         .project-link {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             color: #58a6ff;
-            text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
         }
-
-        .project-link:hover {
-            gap: 0.8rem;
-        }
-
-        /* Footer */
         footer {
             background: rgba(13, 17, 23, 0.8);
             border-top: 1px solid #30363d;
@@ -323,77 +143,24 @@
             margin-top: 5rem;
             text-align: center;
         }
-
-        .footer-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            font-size: 0.9rem;
-            color: #8b949e;
-        }
-
-        .social-links a:hover {
-            color: #58a6ff;
-        }
-
-        .footer-text {
-            font-size: 0.85rem;
-            color: #8b949e;
-        }
-
-        /* Responsive */
+        .footer-content { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .social-links a { font-size: 0.9rem; color: #8b949e; }
+        .social-links a:hover { color: #58a6ff; }
+        .footer-text { font-size: 0.85rem; color: #8b949e; }
         @media (max-width: 768px) {
-            .nav {
-                gap: 1rem;
-                font-size: 0.8rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero .tagline {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .skills-grid,
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
+            .projects-grid { grid-template-columns: 1fr; }
         }
-
         @media (max-width: 600px) {
-            .nav {
-                display: none;
-            }
-
-            .hero {
-                margin: 2rem auto;
-            }
-
-            .hero h1 {
-                font-size: 1.5rem;
-            }
+            .nav { display: none; }
+            .hero { margin: 2rem auto; }
+            .hero h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="logo">Loki</div>
@@ -405,7 +172,6 @@
         </div>
     </header>
 
-    <!-- Hero -->
     <div class="hero">
         <h1>Loki</h1>
         <p class="tagline">Infrastructure Engineer → Cloud & Platform Engineering</p>
@@ -420,141 +186,93 @@
     </div>
 
     <div class="container">
-        <!-- About -->
         <section id="about">
             <h2 class="section-title">📖 About</h2>
             <p class="about-text">
-                I'm an infrastructure engineer with ~11 years of experience in telecom, working on the infrastructure side. 
-                My background spans Windows Server administration (Active Directory, SCCM/MECM, SCOM), SFTP/PowerShell automation, 
-                and hands-on experience with VMware and Microsoft environments.
+                Infrastructure engineer with ~11 years of experience in telecom. Background in Windows Server 
+                administration, VMware, and Microsoft environments. Currently transitioning into platform and 
+                cloud engineering through deep technical skills in Infrastructure-as-Code, containerization, 
+                and orchestration.
             </p>
-            <p class="about-text">
-                Currently transitioning into platform and cloud engineering through deep technical skills in Infrastructure-as-Code, 
-                containerization, and orchestration. My goal is to reach a Solutions Architect role with real depth in modern cloud and platform technologies.
-            </p>
-            <div class="highlight-box">
-                <strong>Currently:</strong> Terraform (Oct 4 deadline) → OpenShift & DO180 (Oct 5 - Nov 17) → CCAR-F exam prep (Nov 17 - Dec 10)
-            </div>
-            <div class="highlight-box">
-                <strong>Lab:</strong> Dedicated Ubuntu environment (asus-lab) for real, hands-on infrastructure-as-code work
-            </div>
         </section>
 
-        <!-- Skills -->
         <section id="skills">
             <h2 class="section-title">🛠️ Skills & Tech Stack</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Infrastructure</h3>
-                    <div class="badges">
-                        <span class="badge">Windows Server</span>
-                        <span class="badge">VMware</span>
-                        <span class="badge">Active Directory</span>
-                        <span class="badge">SCCM/MECM</span>
-                    </div>
+            <div class="tech-group">
+                <div class="tech-label">Infrastructure</div>
+                <div class="badges">
+                    <span class="badge">Windows Server</span>
+                    <span class="badge">VMware</span>
+                    <span class="badge">Active Directory</span>
+                    <span class="badge">SCCM/MECM</span>
                 </div>
-
-                <div class="skill-card">
-                    <h3>IaC & Automation</h3>
-                    <div class="badges">
-                        <span class="badge purple">Terraform</span>
-                        <span class="badge red">Ansible</span>
-                        <span class="badge yellow">Vault</span>
-                        <span class="badge orange">PowerShell</span>
-                    </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-label">IaC & Automation</div>
+                <div class="badges">
+                    <span class="badge purple">Terraform</span>
+                    <span class="badge red">Ansible</span>
+                    <span class="badge yellow">Vault</span>
+                    <span class="badge orange">PowerShell</span>
                 </div>
-
-                <div class="skill-card">
-                    <h3>Containers & Orchestration</h3>
-                    <div class="badges">
-                        <span class="badge cyan">Docker</span>
-                        <span class="badge cyan">Kubernetes</span>
-                        <span class="badge red">OpenShift</span>
-                        <span class="badge">KubeVirt</span>
-                    </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-label">Containers & Orchestration</div>
+                <div class="badges">
+                    <span class="badge cyan">Docker</span>
+                    <span class="badge cyan">Kubernetes</span>
+                    <span class="badge red">OpenShift</span>
+                    <span class="badge">KubeVirt</span>
                 </div>
-
-                <div class="skill-card">
-                    <h3>Version Control & OS</h3>
-                    <div class="badges">
-                        <span class="badge orange">Git/GitHub</span>
-                        <span class="badge orange">Ubuntu/Linux</span>
-                        <span class="badge orange">Bash</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Learning Path</h3>
-                    <div class="badges">
-                        <span class="badge">DO180 (OpenShift)</span>
-                        <span class="badge">EX280 (OpenShift)</span>
-                        <span class="badge">CCAR-F (Dec 10)</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Certifications Target</h3>
-                    <div class="badges">
-                        <span class="badge">AZ-104</span>
-                        <span class="badge red">Red Hat (EX280)</span>
-                        <span class="badge">Cloud Architect</span>
-                    </div>
+            </div>
+            <div class="tech-group">
+                <div class="tech-label">Version Control & OS</div>
+                <div class="badges">
+                    <span class="badge orange">Git/GitHub</span>
+                    <span class="badge orange">Ubuntu/Linux</span>
+                    <span class="badge orange">Bash</span>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="projects">
             <h2 class="section-title">🚀 Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-title">IaC Dojo</div>
                     <p class="project-desc">
-                        Infrastructure-as-Code fundamentals journey: Linux → Docker → Terraform → Ansible → Vault. 
+                        Infrastructure-as-Code fundamentals: Linux → Docker → Terraform → Ansible → Vault.
                         Hands-on labs with verified exercises and documented learning.
                     </p>
-                    <a href="https://github.com/loki-0x01/iac-dojo" class="project-link">
-                        View Repository →
-                    </a>
+                    <a href="https://github.com/loki-0x01/iac-dojo" class="project-link">View Repository →</a>
                 </div>
-
                 <div class="project-card">
                     <div class="project-title">OpenShift Dojo</div>
                     <p class="project-desc">
-                        Red Hat OpenShift curriculum work and architecture exploration. 
+                        Red Hat OpenShift curriculum work and architecture exploration.
                         Practical labs combining DO180 course with self-provisioned infrastructure exercises.
                     </p>
-                    <a href="https://github.com/loki-0x01/openshift-dojo" class="project-link">
-                        View Repository →
-                    </a>
+                    <a href="https://github.com/loki-0x01/openshift-dojo" class="project-link">View Repository →</a>
                 </div>
-
                 <div class="project-card">
                     <div class="project-title">OCP Workbench</div>
                     <p class="project-desc">
-                        Private notes and manifests from Red Hat-hosted labs (DO180). 
+                        Notes and manifests from Red Hat-hosted labs (DO180).
                         Documented learnings in platform basics, security, operations, and advanced topics.
                     </p>
-                    <a href="https://github.com/loki-0x01/ocp-workbench" class="project-link">
-                        View Repository →
-                    </a>
+                    <a href="https://github.com/loki-0x01/ocp-workbench" class="project-link">View Repository →</a>
                 </div>
-
                 <div class="project-card">
                     <div class="project-title">GitHub Profile</div>
                     <p class="project-desc">
-                        Public-facing profile with badges showing my technical journey: 
-                        Windows/VMware → Docker/Terraform/Ansible → K8s/OpenShift → Infrastructure engineering.
+                        Public profile showcasing the technical journey from infrastructure to platform engineering.
                     </p>
-                    <a href="https://github.com/loki-0x01" class="project-link">
-                        Visit Profile →
-                    </a>
+                    <a href="https://github.com/loki-0x01" class="project-link">Visit Profile →</a>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="social-links">
